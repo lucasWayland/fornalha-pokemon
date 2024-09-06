@@ -1,0 +1,99 @@
+/* styles.css */
+
+body {
+    font-family: 'Pokemon Solid', sans-serif; 
+    background-image: url('iniciais tipo fogo/padrao-de-pokemon-de-fogo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  h1{
+    color:#000000;
+    font-size:50px;
+    background-color: #f2f2f2;
+    border: none;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+  }
+  
+  .resultados-pesquisa {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .item-resultado {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border: 5px solid #000000;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+    width: 250px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+  }
+  
+  .item-resultado h2 {
+    color: #000000;
+    font-size: 24px;
+  }
+  
+  .descricao-meta {
+    color: #666;
+    font-size: 16px;
+  }
+
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    background-color: #f2f2f2; 
+    color: #000000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    width: 200px; 
+    margin: 10px 0; 
+    font-family:'Pokemon Solid', sans-serif;
+  }
+  
+  button:hover {
+    background-color: #9a9090;
+    cursor: pointer;
+  }
+
+  .exibe{
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  input{
+    border-radius: 15px;
+    border: none;
+    padding: 10px 20px;
+    font-size: 13px;
+    width: 400px;
+    height: 50px;
+  }
+
+  footer{
+    color: #000000;
+    font-size:20px;
+    background-color: rgba(255, 248, 220, 0.724);
+    width:100%;
+    text-align: center;
+    margin-top: 200px;
+  }

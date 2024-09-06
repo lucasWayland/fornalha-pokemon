@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Fornalha Pokemon</title>
+</head>
+
+<body>
+    <header>
+        <h1>Pokemon iniciais do tipo fogo</h1>
+    </header>
+    <main>
+        <section>
+            <input class="exibe" id="campo-pesquisa" type="text" placeholder="Descubra qual pokemon inicial de fogo é o seu preferido">
+            <button onclick="busca()" class="exibe">CAPTURAR</button>
+        </section>
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+            <!-- <div class="item-resultado">
+                <h2>Charmander</h2>
+                <a href="https://www.pokemon.com/br/pokedex/charmander" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">A chama na ponta da cauda deste Pokémon é um indicador de sua vitalidade. Se a
+                    chama estiver
+                    fraca, significa que está doente.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Charmeleon</h2>
+                <a href="https://www.pokemon.com/br/pokedex/charmeleon" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">A chama na ponta da cauda de Charmeleon queima mais intensamente quando este
+                    Pokémon está com raiva.
+                    Ele cospe bolas de fogo.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Charizard</h2>
+                <a href="https://www.pokemon.com/br/pokedex/charizard" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Ao voar, a chama na ponta da cauda deste Pokémon queima com ainda mais
+                    intensidade.
+                    Seus ataques de fogo são extremamente poderosos.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Cyndaquil</h2>
+                <a href="https://www.pokemon.com/br/pokedex/cyndaquil" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">O fogo que queima em suas costas aumenta de intensidade quando ele está emocionado.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Quilava</h2>
+                <a href="https://www.pokemon.com/br/pokedex/quilava" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">As chamas nas costas de Quilava queimam ferozmente. Diz-se que a temperatura ao redor dele pode chegar a 800 graus.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Typhlosion</h2>
+                <a href="https://www.pokemon.com/br/pokedex/typhlosion" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">As chamas que queimam nas costas de Typhlosion são tão quentes que podem derreter rochas. Seus rugidos são ensurdecedores.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Torchic</h2>
+                <a href="https://www.pokemon.com/br/pokedex/torchic" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">A chama em sua cabeça brilha intensamente quando está animado.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Combusken</h2>
+                <a href="https://www.pokemon.com/br/pokedex/combusken" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Combusken luta usando suas pernas e a chama em sua cabeça. Seus chutes são tão poderosos que podem incendiar a grama seca.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Blaziken</h2>
+                <a href="https://www.pokemon.com/br/pokedex/blaziken" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Blaziken é um Pokémon de combate extremamente habilidoso. A chama em sua cabeça queima com uma intensidade incrível durante as batalhas.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Chimchar</h2>
+                <a href="https://www.pokemon.com/br/pokedex/chimchar" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">A chama na ponta de sua cauda é um sinal de sua vitalidade. Quanto mais brilhante, mais saudável ele está.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Monferno</h2>
+                <a href="https://www.pokemon.com/br/pokedex/monferno" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Monferno é um lutador ágil e rápido. A chama em sua cauda se torna maior e mais intensa durante as batalhas.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Infernape</h2>
+                <a href="https://www.pokemon.com/br/pokedex/infernape" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Infernape é um Pokémon extremamente poderoso. A chama em sua cauda queima com uma intensidade incrível, capaz de incendiar florestas.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Tepig</h2>
+                <a href="https://www.pokemon.com/br/pokedex/tepig" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">A espiral de pelos em suas costas se inflama quando está com raiva.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Pignite</h2>
+                <a href="https://www.pokemon.com/br/pokedex/pignite" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Pignite é um lutador feroz. As chamas em suas costas queimam com mais intensidade quando está em batalha.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Emboar</h2>
+                <a href="https://www.pokemon.com/br/pokedex/emboar" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Emboar é um Pokémon de combate poderoso. As chamas em suas costas são tão quentes que podem derreter rochas.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Fennekin</h2>
+                <a href="https://www.pokemon.com/br/pokedex/fennekin" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">A ponta de sua cauda brilha intensamente, indicando a força de seu poder psíquico e de fogo.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Braixen</h2>
+                <a href="https://www.pokemon.com/br/pokedex/braixen" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Braixen manipula as chamas com a vara mágica que segura em suas mãos.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Delphox</h2>
+                <a href="https://www.pokemon.com/br/pokedex/delphox" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Delphox usa a chama mágica de sua vara para realizar ataques poderosos e hipnotizantes.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Litten</h2>
+                <a href="https://www.pokemon.com/br/pokedex/litten" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Litten é um Pokémon selvagem e independente que ama a liberdade. Seu pelo é tão oleoso que se inflama ao menor atrito.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Torracat</h2>
+                <a href="https://www.pokemon.com/br/pokedex/torracat" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Torracat é um Pokémon orgulhoso que adora chamar a atenção. Sua pelagem inflamada emite uma luz intensa.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Incineroar</h2>
+                <a href="https://www.pokemon.com/br/pokedex/incineroar" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Incineroar é um lutador poderoso e carismático que adora entreter o público. Seus ataques de fogo são devastadores.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Scorbunny</h2>
+                <a href="https://www.pokemon.com/br/pokedex/scorbunny" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Scorbunny é um Pokémon cheio de energia que ama correr. A chama em suas orelhas queima mais intensamente quando está animado.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Raboot</h2>
+                <a href="https://www.pokemon.com/br/pokedex/raboot" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Raboot é um Pokémon rápido e ágil que luta com suas pernas e a chama em suas orelhas. Seus chutes são extremamente poderosos.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Cinderace</h2>
+                <a href="https://www.pokemon.com/br/pokedex/cinderace" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Cinderace é um astro do futebol que utiliza a bola de fogo para realizar jogadas incríveis. Seus chutes são tão fortes que podem causar explosões.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Fuecoco</h2>
+                <a href="https://www.pokemon.com/br/pokedex/fuecoco" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Fuecoco é um Pokémon do tipo Fogo que adora comer bagas picantes. A chama em sua barriga cresce quando ele está feliz.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Crocalor</h2>
+                <a href="https://www.pokemon.com/br/pokedex/crocalor" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Crocalor é a evolução de Fuecoco. Ele é um Pokémon forte e resistente, com uma casca dura que protege seu corpo. As chamas em sua barriga se tornam mais intensas durante as batalhas.</p>
+            </div>
+            <div class="item-resultado">
+                <h2>Skeledirge</h2>
+                <a href="https://www.pokemon.com/br/pokedex/skeledirge" target="_blank">Visite a pokedex oficial!</a>
+                <p class="descricao-meta">Skeledirge é a evolução final de Fuecoco. Ele é um Pokémon poderoso e elegante, capaz de controlar as chamas com maestria. Suas performances de dança são hipnotizantes.</p>
+            </div> -->
+        </section>
+    </main>
+    <footer>
+        <p>2024 - Fornalha Pokemon. Todos os direitos reservados</p>
+        <p>Para sugestões, entre em contato pelo e-mail: lucas@gmail.com</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
